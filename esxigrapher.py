@@ -75,7 +75,7 @@ class  ESXiClass:
         #    tempfile.write("%s        %s \n" % (key,value))
         #tempfile.close()
 
-def sendValues(filepath, zabbixserver = "10.66.59.40", zabbixport = "10051", senderloc = "zabbix_sender"):
+def sendValues(filepath, zabbixserver = "xx.xx.xx.xx", zabbixport = "10051", senderloc = "zabbix_sender"):
     r = os.system("%s --zabbix-server '%s' --port '%s' -i '%s' -vv" % (senderloc,zabbixserver,zabbixport,filepath))
     if r != 0:
         raise ErrorSendingValues, "An error occured sending values to the server"
