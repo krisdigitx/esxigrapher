@@ -148,7 +148,7 @@ def main():
             parser.error("Error creating the file to send")
 
         try:
-            sendValues(filepath=tempfilepath,zabbixserver="10.66.59.40",zabbixport="10051",senderloc="zabbix_sender")
+            sendValues(filepath=tempfilepath,zabbixserver="xx.xx.xx.xx",zabbixport="10051",senderloc="zabbix_sender")
         except ErrorSendingValues:
             parser.error("An error occurred while sending values to the zabbix server")
     finally:
